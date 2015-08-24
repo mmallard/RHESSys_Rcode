@@ -6,6 +6,7 @@
 # value2
 # ...
 # Returns dataframe object with 2 columns ("dates" and "myvar") 
+# ASSUMES daily inputs are in file
 
 readRCInputVar <- function(thisfile) { # Takes filename
 	if (!file.exists(thisfile)) stop("File does not exist \n")
