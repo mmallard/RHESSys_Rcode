@@ -16,7 +16,7 @@ name <- "Testbed Creek" # designate a name for this set of runs
 make.png <- TRUE
 calibPath <- "PATH_TO_CALIBRATOR_OUTPUT" # should end in rhessys/output
 session <- 2
-plotRuns <- c('106') # which iterations to plot
+plotRuns <- c('106') # which iterations to plot?
 startdate <- as.Date(paste('2001','10','1',sep="/")) # period of which to plot
 enddate <- as.Date(paste('2005','9','30',sep="/"))
 streamObsfile <- "STREAM_OBS_FILE" # assumes it's formatted for rhessys input already
@@ -70,7 +70,7 @@ for (i in plotRuns) {
 	ob.e.acc <- ob.p.acc - ob.s.acc # "observed" evap
 	et.acc <- e.acc + tr.acc
 	
-# runoff ratios
+# compute runoff ratios
 	mratio <- s.acc/p.acc
 	oratio <- ob.s.acc/ob.p.acc
 	
