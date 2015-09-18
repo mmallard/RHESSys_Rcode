@@ -9,7 +9,7 @@ source("read_RInput.r")
 make.png <- TRUE 
 calibPath <- "PATH_TO_CALIBRATOR_OUTPUT" # should end in rhessys/output
 session <- 3
-plotRuns <- c('73') # which iterations to plot
+plotRuns <- c('73') # chose which iterations to plot
 startdate <- as.Date(paste('2009','10','1',sep="/")) # period to plot
 enddate <- as.Date(paste('2010','9','30',sep="/"))
 streamObsfile <- "STREAM_OBS_FILE" # assumes it's formatted for rhessys input already
