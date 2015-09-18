@@ -9,6 +9,7 @@
 # Returns dataframe with 2 columns ("dates" and column with variable name that was requested)
 # ASSUMES daily inputs are in file
 
+
 readRC2InputVar <- function(infile,varname) { # Takes filename & var name (either precip_mm or streamflow_mm)
     if (!file.exists(infile)) {
       cat("File name ",infile,"\n")
